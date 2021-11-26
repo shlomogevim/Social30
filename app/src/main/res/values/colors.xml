@@ -10,5 +10,7 @@
     <color name="white">#FFFFFFFF</color>
 
 
-    <color name="color_PrimaryDark">#FF000000</color>
+    <color name="color_Primary">#A51B598A</color>
+    <color name="color_PrimaryDark">#F01B598A</color>
+    <color name="color_Accent">#F06292</color>
 </resources>
