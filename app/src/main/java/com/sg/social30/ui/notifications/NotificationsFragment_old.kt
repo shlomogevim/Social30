@@ -11,7 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.sg.social30.R
 
 
-class NotificationsFragment : Fragment() {
+class NotificationsFragment_old : Fragment() {
 
    /* private lateinit var notificationsViewModel: NotificationsViewModel
     private var _binding: FragmentNotificationsBinding? = null*/

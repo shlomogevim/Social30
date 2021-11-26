@@ -13,7 +13,9 @@
         <entry key="..\:/Android/Udemy/Social Networking/Social30/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
         <entry key="..\:/Android/Udemy/Social Networking/Social40/app/src/main/res/layout/activity_main.xml" value="0.165625" />
         <entry key="..\:/Android/Udemy/Social Networking/Social40/app/src/main/res/layout/fragment_home.xml" value="0.165625" />
-        <entry key="..\:/Android/Udemy/Social Networking/Social40/app/src/main/res/layout/fragment_search.xml" value="0.3333333333333333" />
+        <entry key="..\:/Android/Udemy/Social Networking/Social40/app/src/main/res/layout/fragment_notification.xml" value="0.3333333333333333" />
+        <entry key="..\:/Android/Udemy/Social Networking/Social40/app/src/main/res/layout/fragment_profile.xml" value="0.22" />
+        <entry key="..\:/Android/Udemy/Social Networking/Social40/app/src/main/res/layout/fragment_search.xml" value="0.3" />
       </map>
     </option>
   </component>

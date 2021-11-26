@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.sg.social30.ui.home.HomeFragment"
+        android:name="com.sg.social30.ui.home.HomeFragment_old"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home_old" />
 
@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.sg.social30.ui.notifications.NotificationsFragment"
+        android:name="com.sg.social30.ui.notifications.NotificationsFragment_old"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications_old" />
 </navigation>

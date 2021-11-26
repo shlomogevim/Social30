@@ -11,7 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.sg.social30.R
 import com.sg.social30.databinding.FragmentHomeBinding
 
-class HomeFragment : Fragment() {
+class HomeFragment_old : Fragment() {
 
     private lateinit var homeViewModel: HomeViewModel
     private var _binding: FragmentHomeBinding? = null
