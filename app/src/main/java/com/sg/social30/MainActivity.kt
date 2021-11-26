@@ -17,40 +17,31 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    internal var selectFragment: Fragment? = null
 
     private val onNavigationItemSelectedListener =
         BottomNavigationView.OnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_home -> {
-                    selectFragment = HomeFragment()
-
+                    moveToFragment(HomeFragment())
+                    return@OnNavigationItemSelectedListener true
                 }
                 R.id.nav_search -> {
-
-                    selectFragment = SearchFragment()
+                    moveToFragment(SearchFragment())
+                    return@OnNavigationItemSelectedListener true
                 }
                 R.id.nav_add_post -> {
 
                     return@OnNavigationItemSelectedListener true
                 }
                 R.id.nav_notification -> {
-
-                    selectFragment = NotificationFragment()
+                    moveToFragment(NotificationFragment())
+                    return@OnNavigationItemSelectedListener true
                 }
                 R.id.nav_profile -> {
-
-                    selectFragment = ProfileFragment()
+                    moveToFragment(ProfileFragment())
+                    return@OnNavigationItemSelectedListener true
                 }
             }
-
-            if (selectFragment!=null){
-                supportFragmentManager.beginTransaction().replace(
-                    R.id.fragment_container,
-                    selectFragment!!
-                ).commit()
-            }
-
             false
         }
 
@@ -59,33 +50,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         nav_view.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)
+        moveToFragment(HomeFragment())
 
-
-        supportFragmentManager.beginTransaction().replace(
-            R.id.fragment_container,
-            HomeFragment()
-        ).commit()
-
-
-
-        // navView.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)
-
-        /* binding = ActivityMainBinding.inflate(layoutInflater)
-         setContentView(binding.root)*/
-
-        /*  val navView: BottomNavigationView = binding.navView
-
-          val navController = findNavController(R.id.nav_host_fragment_activity_main)
-          // Passing each menu ID as a set of Ids because each
-          // menu should be considered as top level destinations.
-          val appBarConfiguration = AppBarConfiguration(
-              setOf(
-                  R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
-              )
-          )
-          setupActionBarWithNavController(navController, appBarConfiguration)
-          navView.setupWithNavController(navController)*/
     }
 
-
+    private fun moveToFragment(fragment: Fragment) {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragment_container, fragment!!).commit()
+    }
 }
